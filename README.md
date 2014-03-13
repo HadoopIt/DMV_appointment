@@ -1,5 +1,5 @@
-DMV_appointment
-===============
+DMV Appointment (behind-the-wheel test)
+===========================
 
 You probably don't want to wait for nearly a month time for the DMV driving test. This program helps to search for the earliest available DMV "behind-the-wheel driving test" in multiple DMV offices.
 
