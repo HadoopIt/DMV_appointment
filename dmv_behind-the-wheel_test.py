@@ -22,8 +22,10 @@ birth_month = ''            # e.g. 05
 birth_day = ''              # e.g. 06
 birth_year = ''             # e.g. 1990
 
-drive_test_url = 'https://www.dmv.ca.gov/wasapp/foa/findDriveTest.do'
-#office_visit_url = 'https://www.dmv.ca.gov/wasapp/foa/findOfficeVisit.do'
+# appointment for behind-the-wheel test
+test_url = 'https://www.dmv.ca.gov/wasapp/foa/findDriveTest.do'
+# appointment for office visit
+#test_url = 'https://www.dmv.ca.gov/wasapp/foa/findOfficeVisit.do'
 
 # for complete DMV office list, please go to the below address, and view page source in your browser
 # https://www.dmv.ca.gov/foa/clear.do?goTo=driveTest&localeName=en
@@ -70,7 +72,7 @@ def main():
 
 
 def get_earliest_appointment(data):
-    r = requests.post(drive_test_url, data = data)
+    r = requests.post(test_url, data = data)
     soup = BeautifulSoup(r.content)
     for p in soup.find_all('p', 'alert'):
         if not p.text.startswith('The first available appointment'):
