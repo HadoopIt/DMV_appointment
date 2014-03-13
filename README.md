@@ -1,7 +1,7 @@
 DMV Behind-the-wheel Driving Test
 ===========================
 
-You probably don't want to wait for nearly a month time for the DMV driving test. This program helps to search for the earliest available DMV "behind-the-wheel driving test" in multiple DMV offices.
+You probably don't want to wait for nearly a month time for the DMV driving test. This simple Python program helps to search for the earliest available DMV "behind-the-wheel driving test" in multiple DMV offices.
 
 Say you want to search for all earliest available appointment slots within the next 10 days, set the value of 'test_in_days' to 10 at the beginning of program. Enter your personal information then as if you were registering on DMV website. 
 
